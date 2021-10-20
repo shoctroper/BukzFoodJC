@@ -23,7 +23,8 @@ CREATE TABLE usuario(
          esCocinero BOOLEAN DEFAULT FALSE,
          esAdmin BOOLEAN DEFAULT FALSE,
          esActivo BOOLEAN DEFAULT FALSE,
-         PRIMARY KEY (ID_Usuario));
+         PRIMARY KEY (ID_Usuario)/*,
+         CONSTRAINT UC_Usuario UNIQUE (Celular, Correo)*/ );
 
 /* Tabla Venta */
 CREATE TABLE venta(
