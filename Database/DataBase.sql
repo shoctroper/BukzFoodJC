@@ -17,7 +17,7 @@ CREATE TABLE usuario(
          ID_Usuario MEDIUMINT NOT NULL AUTO_INCREMENT,
          Nombre VARCHAR(50) NOT NULL,
          Apellidos VARCHAR(50) NOT NULL,
-         Celular DECIMAL(5,2) NOT NULL,
+         Celular VARCHAR(15) NOT NULL,
          Correo VARCHAR(50) NOT NULL,
          Pass VARCHAR(50) NOT NULL,
          esCocinero BOOLEAN DEFAULT FALSE,
