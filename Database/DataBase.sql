@@ -37,10 +37,12 @@ CREATE TABLE venta(
 /* Tabla Venta-Producto-Detail */
 CREATE TABLE venta_producto_detail(
          ID_VentaProductoDetail MEDIUMINT NOT NULL AUTO_INCREMENT,
+         ID_Venta SMALLINT NOT NULL,
          ID_Producto MEDIUMINT NOT NULL,
          CantidadInicial SMALLINT NOT NULL,
          CantidadActual SMALLINT,
          PRIMARY KEY (ID_VentaProductoDetail),
+         FOREIGN KEY (ID_Venta) REFERENCES venta(ID_Venta),
          FOREIGN KEY (ID_Producto) REFERENCES producto(ID_Producto));
          
 /* Tabla Pedido */
