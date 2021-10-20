@@ -30,7 +30,7 @@ CREATE TABLE usuario(
 CREATE TABLE venta(
          ID_Venta SMALLINT NOT NULL AUTO_INCREMENT,
          FechaIncio DATE NOT NULL,
-         FechaFinal DATE NOT NULL,
+         FechaFinal DATE,
          Total DECIMAL(7,2),
          PRIMARY KEY (ID_Venta));
          
